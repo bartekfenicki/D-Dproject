@@ -1,0 +1,21 @@
+@use "color" as *;
+@use "font" as *;
+@use "margin" as *;
+
+header {
+    background-color: $primary-color;
+    .container {
+        .navbar {
+            .navbar-item {
+                background-color: $secondary-color;
+                padding: 10px;
+                border: 2px solid $third-color;
+                border-radius: 25%;
+                color: #ffffff;
+                font-size: $nav-font-size;
+            }
+        }
+
+    }
+
+}
