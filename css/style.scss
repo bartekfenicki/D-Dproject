@@ -44,3 +44,16 @@ nav {
     }
 
 }
+
+main {
+    section.banner {
+        .container-fluid {
+            height: 800px;
+            
+            background-color: $secondary-color;
+            background-image: url(james-sutton-freephoto-unsplash.jpg);
+   
+
+        }
+    }
+}

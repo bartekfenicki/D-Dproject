@@ -34,4 +34,10 @@ nav .container-fluid .navbar-icon {
 nav .container-fluid .navbar-dropdown {
   margin-right: 30px;
   margin-top: -125px;
+}
+
+main section.banner .container-fluid {
+  height: 800px;
+  background-color: #9E1A00;
+  background-image: url(james-sutton-freephoto-unsplash.jpg);
 }/*# sourceMappingURL=style.css.map */
