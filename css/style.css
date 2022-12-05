@@ -1,11 +1,37 @@
-header {
-  background-color: #677822;
+nav {
+  background-color: #000000;
+  height: 150px;
 }
-header .container .navbar .navbar-item {
-  background-color: #123456;
-  padding: 10px;
-  border: 2px solid #098765;
+nav .container-fluid .navbar-brand {
+  margin-left: 50px;
+  scale: 75%;
+}
+nav .container-fluid .navbar-nav {
+  display: contents;
+}
+nav .container-fluid .navbar-nav li.nav-item {
+  margin-top: -125px;
+  font-size: 14px;
+  transition: 0.4s;
+  background-color: #9E1A00;
+  padding: 0px 10px 0px 10px;
+  border: 2px solid #9E1A00;
+  border-radius: 30%;
+}
+nav .container-fluid .navbar-nav li.nav-item .nav-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+nav .container-fluid .navbar-nav li.nav-item:hover {
+  background-color: #000000;
+  padding: 0px 10px 0px 10px;
+  border: 2px solid #9E1A00;
   border-radius: 25%;
-  color: #ffffff;
-  font-size: 20px;
+}
+nav .container-fluid .navbar-icon {
+  margin-right: -150px;
+  margin-top: -125px;
+}
+nav .container-fluid .navbar-dropdown {
+  margin-right: 30px;
+  margin-top: -125px;
 }/*# sourceMappingURL=style.css.map */
