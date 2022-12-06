@@ -19,7 +19,7 @@ nav {
                     background-color: $secondary-color;
                     padding: 0px 10px 0px 10px;
                     border: 2px solid $secondary-color;
-                    border-radius: 30%;
+                    border-radius: 20px;
                     .nav-link {
                         color: #ffffff99;
                     }
@@ -28,7 +28,7 @@ nav {
                     background-color: $primary-color;
                     padding: 0px 10px 0px 10px;
                     border: 2px solid $secondary-color;
-                    border-radius: 25%;
+                    border-radius: 20px;
 
                 }
 
@@ -51,9 +51,187 @@ main {
             height: 800px;
             
             background-color: $secondary-color;
-            background-image: url(james-sutton-freephoto-unsplash.jpg);
-   
+            background-image: url(/D-Dpics/james-sutton-freephoto-unsplash.jpg); 
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+            .row {
+                
+                .col-2 {
+                    .box { 
+                       margin-top: 650px;
+                       margin-left: 120px;
+                       scale: 170%;
+                    button {
+                        background-color: $secondary-color;
+                        color: $third-color;
+                        transition: 0.3s;
+                    }
+                    button:hover {
+                        background-color: $sixth-color;
+                        color: white;
+                    }
+                    }
+                }
+            }
 
         }
     }
+    section.textbox-1 {
+        .container-fluid {
+            height: 600px;
+            background-color: $primary-color;
+            .row {
+                .col-6 {
+                    .box.box-text {
+                        margin-top: 130px;
+                        margin-left: 150px;
+                        
+                        h2 {
+                            color: $third-color;
+                            text-align: center;
+                            font-size: $header-font-size;
+                        }
+                        p {
+                            color: $third-color;
+                            margin-top: 70px;
+                            text-align: center;
+                            margin-left: 130px;
+                            margin-right: 130px;
+                            font-size: $article-font-size;
+                        }
+                    }
+
+                }
+                .col-6 {
+                    .box.box-image {
+                        background-color: $secondary-color;
+                        height: 400px;
+                        width: 600px;
+                        margin-top: 75px;
+                        margin-left: 250px;
+                        border-radius: 150px;
+                        background-image: url(/D-Dpics/andrey-andreyev-s20nA2KB1N4-unsplash.jpg);
+                        background-size: contain;
+                        background-position: center;
+                        box-shadow: inset 10px 100px 100px $primary-color;
+                    }
+                }
+
+            }
+        }
+    }
+    section.menu-photos {
+        .container-fluid {
+            height: 400px;
+            background-color: $primary-color;
+            .row {
+                
+                .col-3.first-box {
+                    .box.box-story {
+                        background-color: red;
+                        height: 400px;
+                        background-image: url(/D-Dpics/marek-mucha-tAFWFWrWGyE-unsplash.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        box-shadow: inset 10px 10px 10px $primary-color;
+                        filter: blur(4px);
+                        h2 {
+                            z-index: 0;
+                            color: white;
+                            font-size: 40px;
+                            
+                        }
+                    }
+                }
+                .col-3.second-box {
+                    .box {
+                        background-color: rgb(167, 108, 108);
+                        height: 400px;
+                        background-image: url(/D-Dpics/evan-wise-freephoto-unsplash.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        box-shadow: inset 10px 10px 10px $primary-color;
+                        filter: blur(4px);
+                    }
+                }
+                .col-3.third-box {
+                    .box {
+                        background-color: rgb(182, 161, 161);
+                        height: 400px;
+                        background-image: url(/D-Dpics/sudharma-putra-yKEFhGSBuwY-unsplash.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        box-shadow: inset 10px 10px 10px $primary-color;
+                        filter: blur(4px);
+                    }
+                }
+                .col-3.fourth-box {
+                    .box {
+                        background-color: rgb(26, 25, 25);
+                        height: 400px;
+                        background-image: url(/D-Dpics/bevan-kay-x76Pa3Ni3ak-unsplash.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        box-shadow: inset 10px 10px 10px $primary-color;
+                        filter: blur(4px);
+                    }
+                }
+            }
+        }
+    }
+    section.textbox-2 {
+        .container-fluid {
+            height: 600px;
+            background-color: $primary-color;
+            .row {
+                .col-6 {
+                    .box.box-text {
+                        margin-top: 130px;
+                        margin-right: 150px;
+                        
+                        h2 {
+                            color: $third-color;
+                            text-align: center;
+                            font-size: $header-font-size;
+                        }
+                        p {
+                            color: $third-color;
+                            margin-top: 70px;
+                            text-align: center;
+                            margin-left: 130px;
+                            margin-right: 130px;
+                            font-size: $article-font-size;
+                        }
+                    }
+
+                }
+                .col-6 {
+                    .box.box-image {
+                        background-color: $secondary-color;
+                        height: 400px;
+                        width: 600px;
+                        margin-top: 100px;
+                        margin-left: 100px;
+                        border-radius: 150px;
+                        background-image: url(/D-Dpics/joshua-kantarges-wO4CyWnIzz4-unsplash.jpg);
+                        background-size: contain;
+                        background-position: center;
+                        box-shadow: inset 10px 100px 100px $primary-color;
+                    }
+                }
+            }
+        }
+    }           
 }
+
+
+
+
+/* 
+ padding: 20px;
+ background-color: $secondary-color;
+ border: 1px solid $secondary-color;
+ border-radius: 20px;
+ text-align: center;
+*/
