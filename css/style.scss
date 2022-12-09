@@ -135,6 +135,7 @@ main {
                         background-size: cover;
                         background-position: center;
                         box-shadow: inset 10px 10px 10px $primary-color;
+                        backdrop-filter: blur(3px);
                         
                         h2 {
                             z-index: 0;
@@ -218,6 +219,7 @@ main {
                         background-size: contain;
                         background-position: center;
                         box-shadow: inset 10px 100px 100px $primary-color;
+                        
                     }
                 }
             }
