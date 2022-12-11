@@ -1,42 +1,47 @@
-nav {
+/* mixins */
+body {
+  background-color: #000000;
+}
+body nav {
   background-color: #000000;
   height: 150px;
 }
-nav .container-fluid .navbar-brand {
+body nav .container-fluid .navbar-brand {
   margin-left: 50px;
   scale: 75%;
 }
-nav .container-fluid .navbar-nav {
+body nav .container-fluid .navbar-nav {
   display: contents;
 }
-nav .container-fluid .navbar-nav li.nav-item {
+body nav .container-fluid .navbar-nav li.nav-item {
   margin-top: -125px;
   font-size: 14px;
   transition: 0.4s;
   background-color: #9E1A00;
+  width: 100px;
+  text-align: center;
   padding: 0px 10px 0px 10px;
   border: 2px solid #9E1A00;
   border-radius: 20px;
 }
-nav .container-fluid .navbar-nav li.nav-item .nav-link {
+body nav .container-fluid .navbar-nav li.nav-item .nav-link {
   color: rgba(255, 255, 255, 0.6);
 }
-nav .container-fluid .navbar-nav li.nav-item:hover {
+body nav .container-fluid .navbar-nav li.nav-item:hover {
   background-color: #000000;
   padding: 0px 10px 0px 10px;
   border: 2px solid #9E1A00;
   border-radius: 20px;
 }
-nav .container-fluid .navbar-icon {
-  margin-right: -150px;
+body nav .container-fluid .navbar-icon {
+  margin-right: -120px;
   margin-top: -125px;
 }
-nav .container-fluid .navbar-dropdown {
+body nav .container-fluid .navbar-dropdown {
   margin-right: 30px;
   margin-top: -125px;
 }
-
-main section.banner .container-fluid {
+body main section.banner .container-fluid {
   height: 800px;
   background-color: #9E1A00;
   background-image: url(/D-Dpics/james-sutton-freephoto-unsplash.jpg);
@@ -44,130 +49,268 @@ main section.banner .container-fluid {
   background-size: cover;
   background-repeat: no-repeat;
 }
-main section.banner .container-fluid .row .col-2 .box {
+body main section.banner .container-fluid .row .col-2 .box {
   margin-top: 650px;
   margin-left: 120px;
-  scale: 170%;
+  scale: 160%;
+  width: 250px;
+  padding: 15px;
 }
-main section.banner .container-fluid .row .col-2 .box button {
+body main section.banner .container-fluid .row .col-2 .box button {
   background-color: #9E1A00;
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s;
 }
-main section.banner .container-fluid .row .col-2 .box button:hover {
+body main section.banner .container-fluid .row .col-2 .box button:hover {
   background-color: #CB2100;
   color: white;
 }
-main section.textbox-1 .container-fluid {
+body main section.banner .container-fluid .row .col-4 {
+  text-align: center;
+}
+body main section.banner .container-fluid .row .col-4 .box h1 span {
+  font-size: 20px;
+}
+body main section.textbox-1 .container-fluid {
   height: 600px;
   background-color: #000000;
 }
-main section.textbox-1 .container-fluid .row .col-6 .box.box-text {
-  margin-top: 130px;
-  margin-left: 150px;
-}
-main section.textbox-1 .container-fluid .row .col-6 .box.box-text h2 {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  font-size: 40px;
-}
-main section.textbox-1 .container-fluid .row .col-6 .box.box-text p {
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 70px;
-  text-align: center;
-  margin-left: 130px;
-  margin-right: 130px;
-  font-size: 20px;
-}
-main section.textbox-1 .container-fluid .row .col-6 .box.box-image {
+body main section.textbox-1 .container-fluid .row .col-4 .box.box-image-left {
   background-color: #9E1A00;
-  height: 400px;
-  width: 600px;
-  margin-top: 75px;
-  margin-left: 250px;
+  height: 350px;
+  width: 500px;
+  margin-top: 125px;
+  margin-left: 100px;
   border-radius: 150px;
   background-image: url(/D-Dpics/andrey-andreyev-s20nA2KB1N4-unsplash.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   box-shadow: inset 10px 100px 100px #000000;
 }
-main section.menu-photos .container-fluid {
+body main section.textbox-1 .container-fluid .row .col-4 .box.box-text {
+  margin-top: 130px;
+  text-align: center;
+}
+body main section.textbox-1 .container-fluid .row .col-4 .box.box-text h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 35px;
+}
+body main section.textbox-1 .container-fluid .row .col-4 .box.box-text p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+body main section.textbox-1 .container-fluid .row .col-4 .box.box-image-right {
+  background-color: #9E1A00;
+  height: 350px;
+  width: 500px;
+  margin-top: 125px;
+  margin-left: 0px;
+  border-radius: 150px;
+  background-image: url(/D-Dpics/joshua-kantarges-wO4CyWnIzz4-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 10px 100px 100px #000000;
+}
+body main section.textbox-2 .container-fluid {
+  height: 600px;
+  background-color: #000000;
+}
+body main section.textbox-2 .container-fluid .row .col-4 .box.box-image-left {
+  background-color: #9E1A00;
+  height: 400px;
+  width: 300px;
+  margin-top: 100px;
+  margin-left: 150px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 10px 100px 100px #000000;
+}
+body main section.textbox-2 .container-fluid .row .col-4 .box.box-text {
+  margin-top: 130px;
+  text-align: center;
+}
+body main section.textbox-2 .container-fluid .row .col-4 .box.box-text h2 {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 35px;
+}
+body main section.textbox-2 .container-fluid .row .col-4 .box.box-text p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 70px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 20px;
+}
+body main section.textbox-2 .container-fluid .row .col-4 .box.box-image-right {
+  background-color: #9E1A00;
+  height: 400px;
+  width: 300px;
+  margin-top: 125px;
+  margin-left: 100px;
+  border-radius: 50px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 10px 100px 100px #000000;
+}
+body main section.flame-bar {
+  margin-top: 50px;
+}
+body main section.flame-bar .container-fluid .row .col-12 a img {
+  width: 1920px;
+  height: 150px;
+}
+body main section.menu-photos {
+  margin-top: 100px;
+}
+body main section.menu-photos .container-fluid {
   height: 400px;
   background-color: #000000;
 }
-main section.menu-photos .container-fluid .row .col-3.first-box .box.box-story {
+body main section.menu-photos .container-fluid h3 {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+body main section.menu-photos .container-fluid img {
+  position: absolute;
+  margin-top: -142px;
+  margin-left: 45px;
+  width: 200px;
+}
+body main section.menu-photos .container-fluid .row .col-3.first-box .box {
   background-color: red;
   height: 400px;
   background-image: url(/D-Dpics/marek-mucha-tAFWFWrWGyE-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: inset 10px 10px 10px #000000;  
-  
+  box-shadow: inset 10px 10px 10px #000000;
+  position: relative;
+  opacity: 70%;
+  transition: 0.3s;
 }
-main section.menu-photos .container-fluid .row .col-3.first-box .box.box-story h2 {
+body main section.menu-photos .container-fluid .row .col-3.first-box .box:hover {
+  opacity: 100%;
+}
+body main section.menu-photos .container-fluid .row .col-3.first-box h2 {
   z-index: 0;
   color: white;
   font-size: 40px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 120px;
 }
-main section.menu-photos .container-fluid .row .col-3.second-box .box {
+body main section.menu-photos .container-fluid .row .col-3.second-box .box {
   background-color: rgb(167, 108, 108);
   height: 400px;
   background-image: url(/D-Dpics/evan-wise-freephoto-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  box-shadow: inset 10px 10px 10px #000000; 
-
+  box-shadow: inset 10px 10px 10px #000000;
+  position: relative;
+  opacity: 70%;
+  transition: 0.3s;
 }
-main section.menu-photos .container-fluid .row .col-3.third-box .box {
+body main section.menu-photos .container-fluid .row .col-3.second-box .box:hover {
+  opacity: 100%;
+}
+body main section.menu-photos .container-fluid .row .col-3.second-box h2 {
+  z-index: 0;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 150px;
+}
+body main section.menu-photos .container-fluid .row .col-3.third-box .box {
   background-color: rgb(182, 161, 161);
   height: 400px;
   background-image: url(/D-Dpics/sudharma-putra-yKEFhGSBuwY-unsplash.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: inset 10px 10px 10px #000000;
-
+  position: relative;
+  opacity: 70%;
+  transition: 0.3s;
 }
-main section.menu-photos .container-fluid .row .col-3.fourth-box .box {
+body main section.menu-photos .container-fluid .row .col-3.third-box .box:hover {
+  opacity: 100%;
+}
+body main section.menu-photos .container-fluid .row .col-3.third-box h2 {
+  z-index: 0;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 140px;
+}
+body main section.menu-photos .container-fluid .row .col-3.fourth-box .box {
   background-color: rgb(26, 25, 25);
   height: 400px;
   background-image: url(/D-Dpics/bevan-kay-x76Pa3Ni3ak-unsplash.jpg);
   background-size: cover;
   background-position: center;
   box-shadow: inset 10px 10px 10px #000000;
-
+  position: relative;
+  opacity: 70%;
+  transition: 0.3s;
 }
-main section.textbox-2 .container-fluid {
-  height: 600px;
-  background-color: #000000;
+body main section.menu-photos .container-fluid .row .col-3.fourth-box .box:hover {
+  opacity: 100%;
 }
-main section.textbox-2 .container-fluid .row .col-6 .box.box-text {
-  margin-top: 130px;
+body main section.menu-photos .container-fluid .row .col-3.fourth-box h2 {
+  z-index: 0;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 150px;
+}
+body main section.location .container-fluid {
+  height: 700px;
+  margin-top: 142px;
+}
+body main section.location .container-fluid .row .col-5 .box {
+  margin-top: 150px;
+  margin-left: 100px;
+}
+body main section.location .container-fluid .row .col-5 .box h1 {
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+body main section.location .container-fluid .row .col-5 .box img {
+  width: 250px;
+  position: absolute;
+  margin-top: -120px;
+  margin-left: 200px;
+  scale: 145%;
+}
+body main section.location .container-fluid .row .col-5 .box p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 50px;
+  font-size: 20px;
+  margin-left: 150px;
   margin-right: 150px;
 }
-main section.textbox-2 .container-fluid .row .col-6 .box.box-text h2 {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: center;
-  font-size: 40px;
+body main section.location .container-fluid .row .col-7 {
+  justify-items: center;
 }
-main section.textbox-2 .container-fluid .row .col-6 .box.box-text p {
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 70px;
-  text-align: center;
-  margin-left: 130px;
-  margin-right: 130px;
-  font-size: 20px;
-}
-main section.textbox-2 .container-fluid .row .col-6 .box.box-image {
+body main section.location .container-fluid .row .col-7 .box {
+  height: 500px;
+  width: 800px;
+  border-radius: 50px;
   background-color: #9E1A00;
-  height: 400px;
-  width: 600px;
+  margin-left: 150px;
   margin-top: 100px;
-  margin-left: 100px;
-  border-radius: 150px;
-  background-image: url(/D-Dpics/joshua-kantarges-wO4CyWnIzz4-unsplash.jpg);
-  background-size: contain;
-  background-position: center;
-  box-shadow: inset 10px 100px 100px #000000;
+}
+body footer {
+  height: 300px;
+  background-color: #9E1A00;
 }
 
 /* 

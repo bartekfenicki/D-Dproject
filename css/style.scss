@@ -2,231 +2,395 @@
 @use "font" as *;
 @use "margin" as *;
 
-nav {
-    background-color: $primary-color;
-    height: 150px;
-    .container-fluid {
-        .navbar-brand {
-            margin-left: 50px;
-            scale: 75%;
-        }
-            .navbar-nav {
-                display: contents;
-                li.nav-item  {
-                    margin-top: -125px;
-                    font-size: $nav-font-size;
-                    transition: 0.4s;
-                    background-color: $secondary-color;
-                    padding: 0px 10px 0px 10px;
-                    border: 2px solid $secondary-color;
-                    border-radius: 20px;
-                    .nav-link {
-                        color: #ffffff99;
-                    }
-                }
-                li.nav-item:hover {
-                    background-color: $primary-color;
-                    padding: 0px 10px 0px 10px;
-                    border: 2px solid $secondary-color;
-                    border-radius: 20px;
 
-                }
-
-            }
-        .navbar-icon {
-            margin-right: -150px;
-            margin-top: -125px;
-        }
-        .navbar-dropdown {
-            margin-right: 30px;
-            margin-top: -125px;
-        }
-    }
-
+/* mixins */
+@mixin menu-box-text {
+    z-index: 0;
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-top: 160px;
 }
 
-main {
-    section.banner {
-        .container-fluid {
-            height: 800px;
-            
-            background-color: $secondary-color;
-            background-image: url(/D-Dpics/james-sutton-freephoto-unsplash.jpg); 
-            background-position: bottom;
-            background-size: cover;
-            background-repeat: no-repeat;
-            .row {
-                
-                .col-2 {
-                    .box { 
-                       margin-top: 650px;
-                       margin-left: 120px;
-                       scale: 170%;
-                    button {
-                        background-color: $secondary-color;
-                        color: $third-color;
-                        transition: 0.3s;
-                    }
-                    button:hover {
-                        background-color: $sixth-color;
-                        color: white;
-                    }
-                    }
-                }
-            }
 
-        }
-    }
-    section.textbox-1 {
+body {
+    background-color: $primary-color;
+    nav {
+        background-color: $primary-color;
+        height: 150px;
         .container-fluid {
-            height: 600px;
-            background-color: $primary-color;
-            .row {
-                .col-6 {
-                    .box.box-text {
-                        margin-top: 130px;
-                        margin-left: 150px;
-                        
-                        h2 {
-                            color: $third-color;
-                            text-align: center;
-                            font-size: $header-font-size;
-                        }
-                        p {
-                            color: $third-color;
-                            margin-top: 70px;
-                            text-align: center;
-                            margin-left: 130px;
-                            margin-right: 130px;
-                            font-size: $article-font-size;
+            .navbar-brand {
+                margin-left: 50px;
+                scale: 75%;
+            }
+                .navbar-nav {
+                    display: contents;
+                    li.nav-item  {
+                        margin-top: -125px;
+                        font-size: $nav-font-size;
+                        transition: 0.4s;
+                        background-color: $secondary-color;
+                        width: 100px;
+                        text-align: center;
+                        padding: 0px 10px 0px 10px;
+                        border: 2px solid $secondary-color;
+                        border-radius: 20px;
+                        .nav-link {
+                            color: #ffffff99;
                         }
                     }
+                    li.nav-item:hover {
+                        background-color: $primary-color;
+                        padding: 0px 10px 0px 10px;
+                        border: 2px solid $secondary-color;
+                        border-radius: 20px;
 
-                }
-                .col-6 {
-                    .box.box-image {
-                        background-color: $secondary-color;
-                        height: 400px;
-                        width: 600px;
-                        margin-top: 75px;
-                        margin-left: 250px;
-                        border-radius: 150px;
-                        background-image: url(/D-Dpics/andrey-andreyev-s20nA2KB1N4-unsplash.jpg);
-                        background-size: contain;
-                        background-position: center;
-                        box-shadow: inset 10px 100px 100px $primary-color;
                     }
-                }
 
+                }
+            .navbar-icon {
+                margin-right: -120px;
+                margin-top: -125px;
+            }
+            .navbar-dropdown {
+                margin-right: 30px;
+                margin-top: -125px;
             }
         }
+
     }
-    section.menu-photos {
-        .container-fluid {
-            height: 400px;
-            background-color: $primary-color;
-            .row {
+
+    main {
+        section.banner {
+            .container-fluid {
+                height: 800px;
                 
-                .col-3.first-box {
-                    .box.box-story {
-                        background-color: red;
-                        height: 400px;
-                        background-image: url(/D-Dpics/marek-mucha-tAFWFWrWGyE-unsplash.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        box-shadow: inset 10px 10px 10px $primary-color;
-                        backdrop-filter: blur(3px);
-                        
-                        h2 {
-                            z-index: 0;
+                background-color: $secondary-color;
+                background-image: url(/D-Dpics/james-sutton-freephoto-unsplash.jpg); 
+                background-position: bottom;
+                background-size: cover;
+                background-repeat: no-repeat;
+                .row {
+                    
+                    .col-2 {
+                        .box { 
+                        margin-top: 650px;
+                        margin-left: 120px;
+                        scale: 160%;
+                        width: 250px;
+                        padding: 15px;
+                        button {
+                            background-color: $secondary-color;
+                            color: $third-color;
+                            transition: 0.3s;
+                        }
+                        button:hover {
+                            background-color: $sixth-color;
                             color: white;
-                            font-size: 40px;
+                        }
+                        }
+                    }
+                    .col-4 {
+                        text-align: center;
+                        .box {
+                            h1 {
+                                span {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        section.textbox-1 {
+            .container-fluid {
+                height: 600px;
+                background-color: $primary-color;
+                .row {
+                    .col-4 {
+                        .box.box-image-left {
+                            background-color: $secondary-color;
+                            height: 350px;
+                            width: 500px;
+                            margin-top: 125px;
+                            margin-left: 100px;
+                            border-radius: 150px;
+                            background-image: url(/D-Dpics/andrey-andreyev-s20nA2KB1N4-unsplash.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 100px 100px $primary-color;
+                        }
+                    }
+
+                    .col-4 {
+                        .box.box-text {
+                            margin-top: 130px;
+                            text-align: center;
+                            
+                            h2 {
+                                color: $third-color;   
+                                font-size: $header-font-size;
+                            }
+                            p {
+                                color: $third-color;
+                                margin-top: 70px;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                font-size: $article-font-size;
+                            }
+                        }
+
+                    }
+                    .col-4 {
+                        .box.box-image-right {
+                            background-color: $secondary-color;
+                            height: 350px;
+                            width: 500px;
+                            margin-top: 125px;
+                            margin-left: 0px;
+                            border-radius: 150px;
+                            background-image: url(/D-Dpics/joshua-kantarges-wO4CyWnIzz4-unsplash.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 100px 100px $primary-color;
+                        }
+                    }
+
+                }
+            }
+        }
+
+        section.textbox-2 {
+            .container-fluid {
+                height: 600px;
+                background-color: $primary-color;
+                .row {
+                    .col-4 {
+                        .box.box-image-left {
+                            background-color: $secondary-color;
+                            height: 400px;
+                            width: 300px;
+                            margin-top: 100px;
+                            margin-left: 150px;
+                            border-radius: 50px;
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 100px 100px $primary-color;
+                        }
+                    }
+
+                    .col-4 {
+                        .box.box-text {
+                            margin-top: 130px;
+                            text-align: center;
+                            
+                            h2 {
+                                color: $third-color;   
+                                font-size: $header-font-size;
+                            }
+                            p {
+                                color: $third-color;
+                                margin-top: 70px;
+                                margin-left: 50px;
+                                margin-right: 50px;
+                                font-size: $article-font-size;
+                            }
+                        }
+
+                    }
+                    .col-4 {
+                        .box.box-image-right {
+                            background-color: $secondary-color;
+                            height: 400px;
+                            width: 300px;
+                            margin-top: 125px;
+                            margin-left: 100px;
+                            border-radius: 50px;
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 100px 100px $primary-color;
+                        }
+                    }
+
+                }
+            }
+        }    
+        
+        section.flame-bar {
+            margin-top: $spacing-mid-margin;
+            .container-fluid {
+                .row {
+                    .col-12 {
+                        a {
+                            img {
+                                width: 1920px;
+                                height: 150px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.menu-photos {
+            margin-top: $spacing-margin;
+            .container-fluid {
+                height: 400px;
+                background-color: $primary-color;
+                h3 {
+                    margin-bottom: $spacing-mid-margin;
+                    margin-left: $spacing-mid-margin;
+                    color: $third-color;
+                    position: relative;
+                }
+                img {
+                    position: absolute;
+                    margin-top: -142px;
+                    margin-left: 45px;
+                    width: 200px;
+                }
+                .row {
+                    
+                    .col-3.first-box {
+                        .box {
+                            background-color: red;
+                            height: 400px;
+                            background-image: url(/D-Dpics/marek-mucha-tAFWFWrWGyE-unsplash.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 10px 10px $primary-color;
+                            position: relative;
+                            opacity: 70%;
+                            transition: 0.3s;
+                        }
+                        .box:hover {
+                            opacity: 100%;
+                        }
+                        h2 {
+                            @include menu-box-text;
+                            margin-left: 120px;
+                        }
+                    }
+                    .col-3.second-box {
+                        .box {
+                            background-color: rgb(167, 108, 108);
+                            height: 400px;
+                            background-image: url(/D-Dpics/evan-wise-freephoto-unsplash.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 10px 10px $primary-color;
+                            position: relative;
+                            opacity: 70%;
+                            transition: 0.3s;
+                        }
+                        .box:hover {
+                            opacity: 100%;
+                        }
+                        h2 {
+                            @include menu-box-text;
+                            margin-left: 150px;
+                        }
+                    }
+                    .col-3.third-box {
+                        .box {
+                            background-color: rgb(182, 161, 161);
+                            height: 400px;
+                            background-image: url(/D-Dpics/sudharma-putra-yKEFhGSBuwY-unsplash.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 10px 10px $primary-color;
+                            position: relative;
+                            opacity: 70%;
+                            transition: 0.3s;
+                        }
+                        .box:hover {
+                            opacity: 100%;
+                        }
+                        h2 {
+                            @include menu-box-text;
+                            margin-left: 140px;
+                        }
+                    }
+                    .col-3.fourth-box {
+                        .box {
+                            background-color: rgb(26, 25, 25);
+                            height: 400px;
+                            background-image: url(/D-Dpics/bevan-kay-x76Pa3Ni3ak-unsplash.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            box-shadow: inset 10px 10px 10px $primary-color;
+                            position: relative;
+                            opacity: 70%;
+                            transition: 0.3s;
+                        }
+                        .box:hover {
+                            opacity: 100%;
+                        }
+                        h2 {
+                            @include menu-box-text;
+                            margin-left: 150px;
+                        }
+                    }
+                }
+            }
+        }
+        
+        section.location {
+            .container-fluid {
+                height: 700px;
+                margin-top: 142px;
+                .row {
+                    .col-5 {
+                        .box {
+                            margin-top: 150px;
+                            margin-left: $spacing-margin;
+                            h1 {
+                                color: $third-color;
+                                position: relative;
+                                margin-top: $spacing-margin;
+                                text-align: center;
+                            }
+                            img {
+                                width: 250px;
+                                position: absolute;
+                                margin-top: -120px;
+                                margin-left: 200px;
+                                scale: 145%;
+                            }
+                            p {
+                                color: $third-color;
+                                margin-top: $spacing-mid-margin;
+                                font-size: $article-font-size;
+                                margin-left: 150px;
+                                margin-right: 150px;
+                            }
+                        }
+                    }
+                    .col-7 {
+                        justify-items: center;
+                        .box {
+                            height: 500px;
+                            width: 800px;
+                            border-radius: 50px;
+                            background-color: $secondary-color;
+                            margin-left: 150px;
+                            margin-top: $spacing-margin;
                             
                         }
                     }
                 }
-                .col-3.second-box {
-                    .box {
-                        background-color: rgb(167, 108, 108);
-                        height: 400px;
-                        background-image: url(/D-Dpics/evan-wise-freephoto-unsplash.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        box-shadow: inset 10px 10px 10px $primary-color;
-                       
-                    }
-                }
-                .col-3.third-box {
-                    .box {
-                        background-color: rgb(182, 161, 161);
-                        height: 400px;
-                        background-image: url(/D-Dpics/sudharma-putra-yKEFhGSBuwY-unsplash.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        box-shadow: inset 10px 10px 10px $primary-color;
-                        
-                    }
-                }
-                .col-3.fourth-box {
-                    .box {
-                        background-color: rgb(26, 25, 25);
-                        height: 400px;
-                        background-image: url(/D-Dpics/bevan-kay-x76Pa3Ni3ak-unsplash.jpg);
-                        background-size: cover;
-                        background-position: center;
-                        box-shadow: inset 10px 10px 10px $primary-color;
-                       
-                    }
-                }
             }
         }
+
     }
-    section.textbox-2 {
-        .container-fluid {
-            height: 600px;
-            background-color: $primary-color;
-            .row {
-                .col-6 {
-                    .box.box-text {
-                        margin-top: 130px;
-                        margin-right: 150px;
-                        
-                        h2 {
-                            color: $third-color;
-                            text-align: center;
-                            font-size: $header-font-size;
-                        }
-                        p {
-                            color: $third-color;
-                            margin-top: 70px;
-                            text-align: center;
-                            margin-left: 130px;
-                            margin-right: 130px;
-                            font-size: $article-font-size;
-                        }
-                    }
-
-                }
-                .col-6 {
-                    .box.box-image {
-                        background-color: $secondary-color;
-                        height: 400px;
-                        width: 600px;
-                        margin-top: 100px;
-                        margin-left: 100px;
-                        border-radius: 150px;
-                        background-image: url(/D-Dpics/joshua-kantarges-wO4CyWnIzz4-unsplash.jpg);
-                        background-size: contain;
-                        background-position: center;
-                        box-shadow: inset 10px 100px 100px $primary-color;
-                        
-                    }
-                }
-            }
-        }
-    }           
+    footer {
+        height: 300px;
+        background-color: $secondary-color;
+        
+    }
 }
-
 
 
 
