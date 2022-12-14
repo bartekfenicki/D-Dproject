@@ -7,14 +7,14 @@ body nav {
   height: 150px;
 }
 body nav .container-fluid .navbar-brand {
-  margin-left: 50px;
-  scale: 75%;
+  margin-top: -50px;
+  scale: 55%;
 }
 body nav .container-fluid .navbar-nav {
   display: contents;
 }
 body nav .container-fluid .navbar-nav li.nav-item {
-  margin-top: -125px;
+  margin-top: -50px;
   font-size: 14px;
   transition: 0.4s;
   background-color: #9E1A00;
@@ -34,12 +34,12 @@ body nav .container-fluid .navbar-nav li.nav-item:hover {
   border-radius: 20px;
 }
 body nav .container-fluid .navbar-icon {
-  margin-right: -120px;
-  margin-top: -125px;
+  margin-right: -100px;
+  margin-top: -50px;
 }
 body nav .container-fluid .navbar-dropdown {
   margin-right: 30px;
-  margin-top: -125px;
+  margin-top: -50px;
 }
 body main section.banner .container-fluid {
   height: 800px;

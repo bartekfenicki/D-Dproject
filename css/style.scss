@@ -20,13 +20,13 @@ body {
         height: 150px;
         .container-fluid {
             .navbar-brand {
-                margin-left: 50px;
-                scale: 75%;
+               margin-top: -50px;
+                scale: 55%;
             }
                 .navbar-nav {
                     display: contents;
                     li.nav-item  {
-                        margin-top: -125px;
+                        margin-top: -50px;
                         font-size: $nav-font-size;
                         transition: 0.4s;
                         background-color: $secondary-color;
@@ -49,12 +49,12 @@ body {
 
                 }
             .navbar-icon {
-                margin-right: -120px;
-                margin-top: -125px;
+                margin-right:-100px;
+                margin-top: -50px;
             }
             .navbar-dropdown {
                 margin-right: 30px;
-                margin-top: -125px;
+                margin-top: -50px;
             }
         }
 
