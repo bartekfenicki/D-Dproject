@@ -397,7 +397,7 @@ body {
         scale: 150%;
     }
 
-<<<<<<< HEAD
+
 }
 
 
@@ -406,8 +406,6 @@ body {
 
 
 
-=======
->>>>>>> 4ab40761913a90826e173427fdac4c5b3f0162a3
 
 /* 
  padding: 20px;
@@ -419,12 +417,32 @@ body {
 
 /*Page2*/
 
-.row{
-    color: white;   
-}
-.container-fluid{
+
+
+section.form {
     background-color: #9E1A00;
+    .container-fluid {
+        
+        padding: 50px;
+        .row {
+            
+            .col-6.box-form {
+                form {
+                    padding: 20px;
+                }
+            }  
+            .col-6.box-video {
+                video {
+                    margin-top: 60px;
+                    margin-left: 110px;
+                }
+            }
+        }
+        
+    }
+    
 }
+
 
 @media screen and (min-width: 992px) {
     .menu{

@@ -313,14 +313,11 @@ body footer {
   background-color: #9E1A00;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 700px) {
   .navbar-brand {
     scale: 150%;
   }
 }
-=======
->>>>>>> 4ab40761913a90826e173427fdac4c5b3f0162a3
 /* 
  padding: 20px;
  background-color: $secondary-color;
@@ -329,12 +326,18 @@ body footer {
  text-align: center;
 */
 /*Page2*/
-.row {
-  color: white;
-}
-
-.container-fluid {
+section.form {
   background-color: #9E1A00;
+}
+section.form .container-fluid {
+  padding: 50px;
+}
+section.form .container-fluid .row .col-6.box-form form {
+  padding: 20px;
+}
+section.form .container-fluid .row .col-6.box-video video {
+  margin-top: 60px;
+  margin-left: 110px;
 }
 
 @media screen and (min-width: 992px) {
