@@ -425,19 +425,20 @@ section.form {
         
         padding: 50px;
         .row {
-            
+            color: white;
+            }
             .col-6.box-form {
                 form {
                     padding: 20px;
                 }
             }  
+           
             .col-6.box-video {
                 video {
                     margin-top: 60px;
                     margin-left: 110px;
                 }
             }
-        }
         
     }
     

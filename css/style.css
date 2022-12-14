@@ -332,10 +332,13 @@ section.form {
 section.form .container-fluid {
   padding: 50px;
 }
-section.form .container-fluid .row .col-6.box-form form {
+section.form .container-fluid .row {
+  color: white;
+}
+section.form .container-fluid .col-6.box-form form {
   padding: 20px;
 }
-section.form .container-fluid .row .col-6.box-video video {
+section.form .container-fluid .col-6.box-video video {
   margin-top: 60px;
   margin-left: 110px;
 }
