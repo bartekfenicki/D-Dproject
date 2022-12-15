@@ -1,44 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap");
 /* mixins */
-body {
+nav {
+  font-family: "Rubik 80s Fade", cursive;
+}
+nav .container-fluid #logored {
+  scale: 50%;
+  height: 150px;
+  margin-top: -45px;
+}
+nav .container-fluid #navigation {
+  width: 120px;
+  text-align: center;
+  transition: 0.3s;
+}
+nav .container-fluid #navigation:hover {
+  text-align: center;
+  width: 120px;
+  background-color: #9E1A00;
+  border-radius: 20px;
+}
+nav .container-fluid #cart {
+  margin-left: 200px;
+}
+
+main {
   font-family: "Rubik 80s Fade", cursive;
   background-color: #000000;
 }
-body nav {
-  background-color: #000000;
+main section.banner {
+  font-family: "Rubik 80s Fade", cursive;
 }
-body nav .container-fluid a.navbar-brand {
-  scale: 55%;
-  height: 150px;
-  margin-bottom: 50px;
-}
-body nav .container-fluid .navbar-nav {
-  gap: 70px;
-  margin-right: 150px;
-}
-body nav .container-fluid .navbar-nav li.nav-item {
-  font-size: 14px;
-  transition: 0.4s;
-  background-color: #9E1A00;
-  width: 120px;
-  text-align: center;
-  padding: 0px 10px 0px 10px;
-  border: 2px solid #9E1A00;
-  border-radius: 20px;
-}
-body nav .container-fluid .navbar-nav li.nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.6);
-}
-body nav .container-fluid .navbar-nav li.nav-item:hover {
-  background-color: #000000;
-  padding: 0px 10px 0px 10px;
-  border: 2px solid #9E1A00;
-  border-radius: 20px;
-}
-body nav .container-fluid .navbar-icon {
-  margin-right: 50px;
-}
-body main section.banner .container-fluid {
+main section.banner .container-fluid {
   height: 800px;
   background-color: #9E1A00;
   background-image: url(/D-Dpics/james-sutton-freephoto-unsplash.jpg);
@@ -46,365 +38,343 @@ body main section.banner .container-fluid {
   background-size: cover;
   background-repeat: no-repeat;
 }
-body main section.banner .container-fluid .row .col-2 .box {
+main section.banner .container-fluid .row .col-2 .box {
   margin-top: 650px;
   margin-left: 120px;
   scale: 160%;
   width: 250px;
   padding: 15px;
 }
-body main section.banner .container-fluid .row .col-2 .box button {
+main section.banner .container-fluid .row .col-2 .box button {
   background-color: #9E1A00;
   color: rgba(255, 255, 255, 0.6);
   transition: 0.3s;
 }
-body main section.banner .container-fluid .row .col-2 .box button:hover {
+main section.banner .container-fluid .row .col-2 .box button:hover {
   background-color: #CB2100;
   color: white;
 }
-body main section.banner .container-fluid .row .col-4 {
+main section.banner .container-fluid .row .col-4 {
   text-align: center;
 }
-body main section.banner .container-fluid .row .col-4 .box h1 span {
+main section.banner .container-fluid .row .col-4 .box h1 span {
   font-size: 20px;
 }
-body main section.textbox-1 .container-fluid {
-  background-color: #000000;
-}
-body main section.textbox-1 .container-fluid .row .col-4 .box.box-image-left {
-  background-color: #9E1A00;
+main section.textbox1 .container-fluid .row #picleft1 .box {
   height: 350px;
-  width: 500px;
-  margin-top: 125px;
+  width: 400px;
   margin-left: 100px;
-  border-radius: 150px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 100px #000000;
   background-image: url(/D-Dpics/DSC07998.jpeg);
   background-size: cover;
   background-position: center;
-  box-shadow: inset 10px 100px 100px #000000;
 }
-body main section.textbox-1 .container-fluid .row .col-4 .box.box-text {
-  margin-top: 120px;
-  margin-left: 70px;
-  text-align: center;
-  height: 300px;
-  width: 450px;
-}
-body main section.textbox-1 .container-fluid .row .col-4 .box.box-text h2 {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 35px;
-}
-body main section.textbox-1 .container-fluid .row .col-4 .box.box-text p {
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 30px;
-  font-size: 17px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-body main section.textbox-1 .container-fluid .row .col-4 .box.box-image-right {
-  background-color: #9E1A00;
+main section.textbox1 .container-fluid .row #text1 .box {
   height: 350px;
   width: 500px;
-  margin-top: 125px;
-  margin-left: 0px;
-  border-radius: 150px;
-  background-image: url(/D-Dpics/DSC07982.jpeg);
-  background-size: cover;
-  background-position: top;
-  box-shadow: inset 10px 100px 100px #000000;
-}
-body main section.textbox-2 .container-fluid {
-  width: 100%;
-  background-color: #000000;
-}
-body main section.textbox-2 .container-fluid .row .col-4 .box.box-image-left {
-  height: 400px;
-  width: 300px;
+  margin-left: 50px;
   margin-top: 100px;
-  margin-left: 150px;
-  border-radius: 50px;
-  background-image: url(/D-Dpics/viking.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: inset 10px 10px 10px #000000;
-}
-body main section.textbox-2 .container-fluid .row .col-4 .box.box-text {
-  margin-top: 120px;
-  margin-left: 70px;
+  margin-bottom: 50px;
   text-align: center;
-  height: 300px;
-  width: 450px;
-}
-body main section.textbox-2 .container-fluid .row .col-4 .box.box-text h2 {
+  font-family: "Rubik 80s Fade", cursive;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 35px;
 }
-body main section.textbox-2 .container-fluid .row .col-4 .box.box-text p {
-  color: rgba(255, 255, 255, 0.6);
+main section.textbox1 .container-fluid .row #text1 .box p {
   margin-top: 30px;
   font-size: 17px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-body main section.textbox-2 .container-fluid .row .col-4 .box.box-image-right {
-  height: 400px;
-  width: 300px;
-  margin-top: 125px;
+main section.textbox1 .container-fluid .row #picright1 .box {
+  height: 350px;
+  width: 400px;
   margin-left: 100px;
-  border-radius: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 100px #000000;
+  background-image: url(/D-Dpics/DSC07982.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+main section.textbox2 .container-fluid .row #picleft2 .box {
+  height: 350px;
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 100px #000000;
   background-image: url(/D-Dpics/viking.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  box-shadow: inset 10px 10px 10px #000000;
 }
-body main section.flame-bar {
+main section.textbox2 .container-fluid .row #text2 .box {
+  height: 350px;
+  width: 500px;
+  margin-left: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Rubik 80s Fade", cursive;
+  color: rgba(255, 255, 255, 0.6);
+}
+main section.textbox2 .container-fluid .row #text2 .box p {
+  margin-top: 30px;
+  font-size: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+main section.textbox2 .container-fluid .row #picright2 .box {
+  height: 350px;
+  width: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 100px;
+  box-shadow: inset 0 0 100px #000000;
+  background-image: url(/D-Dpics/viking.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main section.flame-bar {
   margin-top: 50px;
 }
-body main section.flame-bar .container-fluid .row .col-12 a img {
+main section.flame-bar .container-fluid .row .col-12 a img {
   width: 100%;
   height: 150px;
   position: relative;
+  z-index: 0;
 }
-body main section.menu-photos {
-  margin-top: 100px;
-}
-body main section.menu-photos .container-fluid {
-  height: 400px;
-  background-color: #000000;
-}
-body main section.menu-photos .container-fluid h3 {
-  margin-bottom: 50px;
-  margin-left: 50px;
+main section.photomenu .container-fluid #moreabout .col-12 .box h3 {
   color: rgba(255, 255, 255, 0.6);
-  position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
 }
-body main section.menu-photos .container-fluid img {
-  position: absolute;
-  margin-top: -142px;
-  margin-left: 48px;
+main section.photomenu .container-fluid #moreabout .col-12 .box img {
   width: 200px;
+  margin-top: -100px;
+  margin-left: 50px;
 }
-body main section.menu-photos .container-fluid .row .col-3.first-box .box {
+main section.photomenu .container-fluid #picmenu #photobox1 .box {
+  background-size: cover;
+  background-position: center;
+  box-shadow: inset 10px 10px 10px #000000;
+  position: relative;
+  opacity: 70%;
+  transition: 0.3s;
   background-color: red;
   height: 400px;
   background-image: url(/D-Dpics/marek-mucha-tAFWFWrWGyE-unsplash.jpg);
+}
+main section.photomenu .container-fluid #picmenu #photobox1 .box:hover {
+  opacity: 100%;
+}
+main section.photomenu .container-fluid #picmenu #photobox1 h2 {
+  color: white;
+  margin-top: 170px;
+  position: absolute;
+  margin-left: 150px;
+}
+main section.photomenu .container-fluid #picmenu #photobox2 .box {
   background-size: cover;
   background-position: center;
   box-shadow: inset 10px 10px 10px #000000;
   position: relative;
   opacity: 70%;
   transition: 0.3s;
-}
-body main section.menu-photos .container-fluid .row .col-3.first-box .box:hover {
-  opacity: 100%;
-}
-body main section.menu-photos .container-fluid .row .col-3.first-box h2 {
-  z-index: 0;
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  margin-top: 160px;
-  margin-left: 120px;
-}
-body main section.menu-photos .container-fluid .row .col-3.second-box .box {
-  background-color: rgb(167, 108, 108);
+  background-color: red;
   height: 400px;
   background-image: url(/D-Dpics/evan-wise-freephoto-unsplash.jpg);
+}
+main section.photomenu .container-fluid #picmenu #photobox2 .box:hover {
+  opacity: 100%;
+}
+main section.photomenu .container-fluid #picmenu #photobox2 h2 {
+  color: white;
+  margin-top: 170px;
+  position: absolute;
+  margin-left: 170px;
+}
+main section.photomenu .container-fluid #picmenu #photobox3 .box {
   background-size: cover;
   background-position: center;
   box-shadow: inset 10px 10px 10px #000000;
   position: relative;
   opacity: 70%;
   transition: 0.3s;
-}
-body main section.menu-photos .container-fluid .row .col-3.second-box .box:hover {
-  opacity: 100%;
-}
-body main section.menu-photos .container-fluid .row .col-3.second-box h2 {
-  z-index: 0;
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  margin-top: 160px;
-  margin-left: 150px;
-}
-body main section.menu-photos .container-fluid .row .col-3.third-box .box {
-  background-color: rgb(182, 161, 161);
+  background-color: red;
   height: 400px;
   background-image: url(/D-Dpics/sudharma-putra-yKEFhGSBuwY-unsplash.jpg);
+}
+main section.photomenu .container-fluid #picmenu #photobox3 .box:hover {
+  opacity: 100%;
+}
+main section.photomenu .container-fluid #picmenu #photobox3 h2 {
+  color: white;
+  margin-top: 170px;
+  position: absolute;
+  margin-left: 150px;
+}
+main section.photomenu .container-fluid #picmenu #photobox4 .box {
   background-size: cover;
   background-position: center;
   box-shadow: inset 10px 10px 10px #000000;
   position: relative;
   opacity: 70%;
   transition: 0.3s;
-}
-body main section.menu-photos .container-fluid .row .col-3.third-box .box:hover {
-  opacity: 100%;
-}
-body main section.menu-photos .container-fluid .row .col-3.third-box h2 {
-  z-index: 0;
-  color: white;
-  font-size: 40px;
-  position: absolute;
-  margin-top: 160px;
-  margin-left: 140px;
-}
-body main section.menu-photos .container-fluid .row .col-3.fourth-box .box {
-  background-color: rgb(26, 25, 25);
+  background-color: red;
   height: 400px;
   background-image: url(/D-Dpics/bevan-kay-x76Pa3Ni3ak-unsplash.jpg);
-  background-size: cover;
-  background-position: center;
-  box-shadow: inset 10px 10px 10px #000000;
-  position: relative;
-  opacity: 70%;
-  transition: 0.3s;
 }
-body main section.menu-photos .container-fluid .row .col-3.fourth-box .box:hover {
+main section.photomenu .container-fluid #picmenu #photobox4 .box:hover {
   opacity: 100%;
 }
-body main section.menu-photos .container-fluid .row .col-3.fourth-box h2 {
-  z-index: 0;
+main section.photomenu .container-fluid #picmenu #photobox4 h2 {
   color: white;
-  font-size: 40px;
+  margin-top: 170px;
   position: absolute;
-  margin-top: 160px;
-  margin-left: 150px;
+  margin-left: 170px;
 }
-body main section.location .container-fluid {
-  height: 700px;
-  margin-top: 142px;
-}
-body main section.location .container-fluid .row .col-5 .box {
+main section.location {
   margin-top: 150px;
-  margin-left: 100px;
 }
-body main section.location .container-fluid .row .col-5 .box h1 {
+main section.location .container-fluid .row #locationtext .box {
+  height: 450px;
+  width: 450px;
+  margin-left: 225px;
+  margin-bottom: 100px;
   color: rgba(255, 255, 255, 0.6);
-  position: relative;
-  margin-top: 100px;
+}
+main section.location .container-fluid .row #locationtext .box h1 {
   text-align: center;
 }
-body main section.location .container-fluid .row .col-5 .box img {
-  width: 250px;
-  position: absolute;
-  margin-top: -120px;
-  margin-left: 200px;
-  scale: 145%;
+main section.location .container-fluid .row #locationtext .box img {
+  margin-top: -210px;
 }
-body main section.location .container-fluid .row .col-5 .box p {
-  color: rgba(255, 255, 255, 0.6);
-  margin-top: 50px;
+main section.location .container-fluid .row #locationtext .box p {
+  margin-top: -150px;
   font-size: 17px;
-  margin-left: 150px;
-  margin-right: 150px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-body main section.location .container-fluid .row .col-7 {
-  justify-items: center;
-}
-body main section.location .container-fluid .row .col-7 .box {
-  height: 500px;
-  width: 800px;
-  border-radius: 50px;
-  background-color: #9E1A00;
+main section.location .container-fluid .row #locationpic .box {
+  height: 450px;
+  width: 700px;
   background-image: url(/D-Dpics/Zrzut\ ekranu\ 2022-12-12\ o\ 16.24.30.png);
-  margin-left: 150px;
-  margin-top: 100px;
+  background-position: bottom;
+  margin-left: 25px;
+  margin-bottom: 100px;
+  border-radius: 100px;
 }
-body footer {
+
+@media (max-width: 800px) {
+  section.photomenu #picmenu {
+    display: contents;
+    flex-direction: column;
+    margin-left: 400px;
+  }
+  section.location {
+    display: contents;
+    flex-direction: column;
+  }
+  section.location #locationtext .box {
+    scale: 80%;
+  }
+  section.location #locationpic .box {
+    margin-top: 0px;
+    scale: 80%;
+  }
+}
+footer {
   background-color: #9E1A00;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-body footer .container-fluid {
+footer .container-fluid {
   max-width: 100%;
 }
-body footer .container-fluid .row {
-  padding-left: 200px;
-  padding-right: 200px;
-  display: flex;
+footer .container-fluid .row {
+  padding-left: 100px;
+  padding-right: 100px;
   flex-wrap: wrap;
 }
-body footer .container-fluid .row .footer_container1 {
-  width: 25%;
+footer .container-fluid .row #footer_container1 {
   padding: 20px 30px;
 }
-body footer .container-fluid .row .footer_container1 h2 {
+footer .container-fluid .row #footer_container1 h2 {
   font-size: 19px;
   text-transform: capitalize;
   padding-bottom: 20px;
   color: #FFFFFF;
 }
-body footer .container-fluid .row .footer_container1 ul {
+footer .container-fluid .row #footer_container1 ul {
   list-style: none;
 }
-body footer .container-fluid .row .footer_container1 ul li {
+footer .container-fluid .row #footer_container1 ul li {
   font-size: 15px;
 }
-body footer .container-fluid .row .footer_container1 ul li a {
+footer .container-fluid .row #footer_container1 ul li a {
   text-decoration: none;
   color: #FFFFFF;
 }
-body footer .container-fluid .row .footer_container1 ul li a:hover {
+footer .container-fluid .row #footer_container1 ul li a:hover {
   padding-left: 5px;
 }
-body footer .container-fluid .row .footer_container2 {
-  width: 25%;
+footer .container-fluid .row #footer_container2 {
   padding: 20px 30px;
   align-items: center;
 }
-body footer .container-fluid .row .footer_container2 h2 {
+footer .container-fluid .row #footer_container2 h2 {
   font-size: 19px;
   text-transform: capitalize;
   padding-bottom: 20px;
   color: #ffffff;
 }
-body footer .container-fluid .row .footer_container2 ul {
+footer .container-fluid .row #footer_container2 ul {
   list-style: none;
 }
-body footer .container-fluid .row .footer_container2 ul li {
+footer .container-fluid .row #footer_container2 ul li {
   margin-left: 0cm;
   font-size: 15px;
 }
-body footer .container-fluid .row .footer_container2 ul li a {
+footer .container-fluid .row #footer_container2 ul li a {
   text-decoration: none;
   color: #ffffff;
 }
-body footer .container-fluid .row .footer_container2 ul li a:hover {
+footer .container-fluid .row #footer_container2 ul li a:hover {
   padding-left: 5px;
 }
-body footer .container-fluid .row .footer_container2 ul li p {
+footer .container-fluid .row #footer_container2 ul li p {
   color: #ffffff;
 }
-body footer .container-fluid .footer_container3 {
-  width: 35%;
+footer .container-fluid #footer_container3 {
   padding: 20px 50px;
 }
-body footer .container-fluid .footer_container3 h2 {
+footer .container-fluid #footer_container3 h2 {
   font-size: 19px;
   text-transform: capitalize;
   padding-bottom: 20px;
   color: #ffffff;
 }
-body footer .container-fluid .footer_container3 p {
+footer .container-fluid #footer_container3 p {
   color: #ffffff;
 }
-body footer .container-fluid .footer_container4 {
-  width: 15%;
+footer .container-fluid #footer_container4 {
   padding: 20px 30px;
   align-items: center;
 }
-body footer .container-fluid .footer_container4 h2 {
+footer .container-fluid #footer_container4 h2 {
   font-size: 19px;
   text-transform: capitalize;
   padding-bottom: 20px;
   color: #ffffff;
 }
-body footer .container-fluid .footer_container4 .wrapper_social {
+footer .container-fluid #footer_container4 .wrapper_social {
   align-items: center;
 }
-body footer .container-fluid .footer_container4 .wrapper_social .button_social {
+footer .container-fluid #footer_container4 .wrapper_social .button_social {
   display: flex;
   flex-direction: column;
   height: 40px;
@@ -417,10 +387,10 @@ body footer .container-fluid .footer_container4 .wrapper_social .button_social {
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.4s ease-out;
 }
-body footer .container-fluid .footer_container4 .wrapper_social .button_social:hover {
+footer .container-fluid #footer_container4 .wrapper_social .button_social:hover {
   background: rgb(63, 57, 57);
 }
-body footer .container-fluid .footer_container4 .wrapper_social .button_social a {
+footer .container-fluid #footer_container4 .wrapper_social .button_social a {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -435,42 +405,35 @@ body footer .container-fluid .footer_container4 .wrapper_social .button_social a
   transition: all 0.4s ease-out;
   color: rgb(61, 56, 56);
 }
-body footer .container-fluid .footer_container4 .wrapper_social .button_social a:hover {
+footer .container-fluid #footer_container4 .wrapper_social .button_social a:hover {
   color: #fff;
 }
+
 @media screen and (max-width: 800px) {
-  body .footer .container-fluid .row {
-    display: box;
+  .footer .container-fluid .row {
+    display: contents;
+    flex-direction: column;
     padding-left: 0px;
     padding-right: 0px;
     margin: 0px;
   }
-  body .footer .container-fluid .row .footer_container1 {
+  .footer .container-fluid .row .footer_container1 {
     margin: 15px 10px;
     width: 100%;
   }
-  body .footer .container-fluid .row .footer_container2 {
+  .footer .container-fluid .row .footer_container2 {
     margin: 15px 10px;
     width: 100%;
   }
-  body .footer .container-fluid .row .footer_container3 {
+  .footer .container-fluid .row .footer_container3 {
     margin: 15px 10px;
     width: 100%;
   }
-  body .footer .container-fluid .row .footer_container4 {
+  .footer .container-fluid .row .footer_container4 {
     margin: 15px 10px;
     width: 100%;
   }
 }
-
-/* 
- padding: 20px;
- background-color: $secondary-color;
- border: 1px solid $secondary-color;
- border-radius: 20px;
- text-align: center;
-*/
-/*Page2*/
 section.form {
   background-color: #9E1A00;
 }
@@ -480,19 +443,17 @@ section.form .container-fluid {
 section.form .container-fluid .row {
   color: white;
 }
-section.form .container-fluid .col-6.box-form form {
+section.form .container-fluid #form-box form {
   padding: 20px;
 }
-section.form .container-fluid .col-6.box-video video {
+section.form .container-fluid #videobox video {
   margin-top: 20px;
   margin-left: 10px;
 }
 
-@media screen and (min-width: 992px) {
-  .menu {
-    font-size: 16px;
-  }
-  .menu-group {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 800px) {
+  section.form #videobox {
+    margin-left: 0px;
+    scale: 80%;
   }
 }/*# sourceMappingURL=style.css.map */
