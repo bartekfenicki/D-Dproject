@@ -233,11 +233,6 @@ body {
                 .row {
                     .col-12 {
                         a {
-                            color: $third-color;
-                            font-size: 25px;
-                            .nav-link.click {
-                                text-align: center;
-                            }
                             img {
                                 width: 1850px;
                                 min-width: 1850px;
@@ -267,7 +262,7 @@ body {
                 img {
                     position: absolute;
                     margin-top: -142px;
-                    margin-left: 45px;
+                    margin-left: 48px;
                     width: 200px;
                 }
                 .row {
@@ -394,6 +389,7 @@ body {
                             width: 800px;
                             border-radius: 50px;
                             background-color: $secondary-color;
+                            background-image: url(/D-Dpics/Zrzut\ ekranu\ 2022-12-12\ o\ 16.24.30.png);
                             margin-left: 150px;
                             margin-top: $spacing-margin;
                             
