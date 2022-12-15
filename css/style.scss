@@ -2,6 +2,7 @@
 @use "font" as *;
 @use "margin" as *;
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
 
 /* mixins */
 @mixin menu-box-text {
@@ -11,52 +12,63 @@
     position: absolute;
     margin-top: 160px;
 }
-
+@mixin viking-graph {
+    background-image: url(/D-Dpics/viking.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: inset 10px 10px 10px $primary-color;
+}
 
 body {
+    font-family: 'Rubik 80s Fade', cursive;
     background-color: $primary-color;
     nav {
         background-color: $primary-color;
-        height: 150px;
         .container-fluid {
-            .navbar-brand {
-               margin-top: -50px;
-                scale: 55%;
-            }
+            
+                a.navbar-brand {
+                    scale: 55%;
+                    height: 150px;
+                    margin-bottom: 50px;
+                }
+           
                 .navbar-nav {
-                    display: contents;
-                    li.nav-item  {
-                        margin-top: -50px;
-                        font-size: $nav-font-size;
-                        transition: 0.4s;
-                        background-color: $secondary-color;
-                        width: 100px;
-                        text-align: center;
-                        padding: 0px 10px 0px 10px;
-                        border: 2px solid $secondary-color;
-                        border-radius: 20px;
-                        .nav-link {
-                            color: #ffffff99;
+                    gap: 70px;
+                    margin-right: 150px;
+                        li.nav-item  {
+                           
+                            font-size: $nav-font-size;
+                            transition: 0.4s;
+                            background-color: $secondary-color;
+                            width: 120px;
+                            text-align: center;
+                            padding: 0px 10px 0px 10px;
+                            border: 2px solid $secondary-color;
+                            border-radius: 20px;
+                            .nav-link {
+                                color: #ffffff99;
+                            }
                         }
-                    }
-                    li.nav-item:hover {
-                        background-color: $primary-color;
-                        padding: 0px 10px 0px 10px;
-                        border: 2px solid $secondary-color;
-                        border-radius: 20px;
+                        li.nav-item:hover {
+                            background-color: $primary-color;
+                            padding: 0px 10px 0px 10px;
+                            border: 2px solid $secondary-color;
+                            border-radius: 20px;
 
-                    }
+                        }
 
                 }
-            .navbar-icon {
-                margin-right:-100px;
-                margin-top: -50px;
-            }
-            .navbar-dropdown {
-                margin-right: 30px;
-                margin-top: -50px;
-            }
-        }
+                
+                
+                .navbar-icon {
+                    
+                    margin-right: 50px;
+                }
+               
+        
+
+        } 
 
     }
 
@@ -117,7 +129,7 @@ body {
                             margin-top: 125px;
                             margin-left: 100px;
                             border-radius: 150px;
-                            background-image: url(/D-Dpics/andrey-andreyev-s20nA2KB1N4-unsplash.jpg);
+                            background-image: url(/D-Dpics/DSC07998.jpeg);
                             background-size: cover;
                             background-position: center;
                             box-shadow: inset 10px 100px 100px $primary-color;
@@ -135,10 +147,11 @@ body {
                             }
                             p {
                                 color: $third-color;
-                                margin-top: 70px;
+                                margin-top: 30px;
                                 margin-left: 50px;
                                 margin-right: 50px;
                                 font-size: $article-font-size;
+                                font-family: Georgia, 'Times New Roman', Times, serif;
                             }
                         }
 
@@ -151,9 +164,9 @@ body {
                             margin-top: 125px;
                             margin-left: 0px;
                             border-radius: 150px;
-                            background-image: url(/D-Dpics/joshua-kantarges-wO4CyWnIzz4-unsplash.jpg);
+                            background-image: url(/D-Dpics/DSC07982.jpeg);
                             background-size: cover;
-                            background-position: center;
+                            background-position: top;
                             box-shadow: inset 10px 100px 100px $primary-color;
                         }
                     }
@@ -169,15 +182,13 @@ body {
                 .row {
                     .col-4 {
                         .box.box-image-left {
-                            background-color: $secondary-color;
+                            
                             height: 400px;
                             width: 300px;
                             margin-top: 100px;
                             margin-left: 150px;
                             border-radius: 50px;
-                            background-size: cover;
-                            background-position: center;
-                            box-shadow: inset 10px 100px 100px $primary-color;
+                            @include viking-graph;
                         }
                     }
 
@@ -192,25 +203,23 @@ body {
                             }
                             p {
                                 color: $third-color;
-                                margin-top: 70px;
+                                margin-top: 30px;
                                 margin-left: 50px;
                                 margin-right: 50px;
                                 font-size: $article-font-size;
+                                font-family: Georgia, 'Times New Roman', Times, serif;
                             }
                         }
 
                     }
                     .col-4 {
                         .box.box-image-right {
-                            background-color: $secondary-color;
                             height: 400px;
                             width: 300px;
                             margin-top: 125px;
                             margin-left: 100px;
                             border-radius: 50px;
-                            background-size: cover;
-                            background-position: center;
-                            box-shadow: inset 10px 100px 100px $primary-color;
+                            @include viking-graph;
                         }
                     }
 
@@ -224,10 +233,20 @@ body {
                 .row {
                     .col-12 {
                         a {
-                            img {
-                                width: 1920px;
-                                height: 150px;
+                            color: $third-color;
+                            font-size: 25px;
+                            .nav-link.click {
+                                text-align: center;
                             }
+                            img {
+                                width: 1850px;
+                                min-width: 1850px;
+                                max-width: max-content;
+                                height: 150px;
+                                position: relative;
+                              
+                            }
+                            
                         }
                     }
                 }

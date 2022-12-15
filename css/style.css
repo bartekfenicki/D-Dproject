@@ -1,24 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap");
 /* mixins */
 body {
+  font-family: "Rubik 80s Fade", cursive;
   background-color: #000000;
 }
 body nav {
   background-color: #000000;
-  height: 150px;
 }
-body nav .container-fluid .navbar-brand {
-  margin-top: -50px;
+body nav .container-fluid a.navbar-brand {
   scale: 55%;
+  height: 150px;
+  margin-bottom: 50px;
 }
 body nav .container-fluid .navbar-nav {
-  display: contents;
+  gap: 70px;
+  margin-right: 150px;
 }
 body nav .container-fluid .navbar-nav li.nav-item {
-  margin-top: -50px;
   font-size: 14px;
   transition: 0.4s;
   background-color: #9E1A00;
-  width: 100px;
+  width: 120px;
   text-align: center;
   padding: 0px 10px 0px 10px;
   border: 2px solid #9E1A00;
@@ -34,12 +36,7 @@ body nav .container-fluid .navbar-nav li.nav-item:hover {
   border-radius: 20px;
 }
 body nav .container-fluid .navbar-icon {
-  margin-right: -100px;
-  margin-top: -50px;
-}
-body nav .container-fluid .navbar-dropdown {
-  margin-right: 30px;
-  margin-top: -50px;
+  margin-right: 50px;
 }
 body main section.banner .container-fluid {
   height: 800px;
@@ -82,7 +79,7 @@ body main section.textbox-1 .container-fluid .row .col-4 .box.box-image-left {
   margin-top: 125px;
   margin-left: 100px;
   border-radius: 150px;
-  background-image: url(/D-Dpics/andrey-andreyev-s20nA2KB1N4-unsplash.jpg);
+  background-image: url(/D-Dpics/DSC07998.jpeg);
   background-size: cover;
   background-position: center;
   box-shadow: inset 10px 100px 100px #000000;
@@ -97,10 +94,11 @@ body main section.textbox-1 .container-fluid .row .col-4 .box.box-text h2 {
 }
 body main section.textbox-1 .container-fluid .row .col-4 .box.box-text p {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 70px;
+  margin-top: 30px;
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 20px;
+  font-size: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 body main section.textbox-1 .container-fluid .row .col-4 .box.box-image-right {
   background-color: #9E1A00;
@@ -109,9 +107,9 @@ body main section.textbox-1 .container-fluid .row .col-4 .box.box-image-right {
   margin-top: 125px;
   margin-left: 0px;
   border-radius: 150px;
-  background-image: url(/D-Dpics/joshua-kantarges-wO4CyWnIzz4-unsplash.jpg);
+  background-image: url(/D-Dpics/DSC07982.jpeg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   box-shadow: inset 10px 100px 100px #000000;
 }
 body main section.textbox-2 .container-fluid {
@@ -119,15 +117,16 @@ body main section.textbox-2 .container-fluid {
   background-color: #000000;
 }
 body main section.textbox-2 .container-fluid .row .col-4 .box.box-image-left {
-  background-color: #9E1A00;
   height: 400px;
   width: 300px;
   margin-top: 100px;
   margin-left: 150px;
   border-radius: 50px;
-  background-size: cover;
+  background-image: url(/D-Dpics/viking.png);
+  background-size: contain;
   background-position: center;
-  box-shadow: inset 10px 100px 100px #000000;
+  background-repeat: no-repeat;
+  box-shadow: inset 10px 10px 10px #000000;
 }
 body main section.textbox-2 .container-fluid .row .col-4 .box.box-text {
   margin-top: 130px;
@@ -139,28 +138,42 @@ body main section.textbox-2 .container-fluid .row .col-4 .box.box-text h2 {
 }
 body main section.textbox-2 .container-fluid .row .col-4 .box.box-text p {
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 70px;
+  margin-top: 30px;
   margin-left: 50px;
   margin-right: 50px;
-  font-size: 20px;
+  font-size: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 body main section.textbox-2 .container-fluid .row .col-4 .box.box-image-right {
-  background-color: #9E1A00;
   height: 400px;
   width: 300px;
   margin-top: 125px;
   margin-left: 100px;
   border-radius: 50px;
-  background-size: cover;
+  background-image: url(/D-Dpics/viking.png);
+  background-size: contain;
   background-position: center;
-  box-shadow: inset 10px 100px 100px #000000;
+  background-repeat: no-repeat;
+  box-shadow: inset 10px 10px 10px #000000;
 }
 body main section.flame-bar {
   margin-top: 50px;
 }
+body main section.flame-bar .container-fluid .row .col-12 a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 25px;
+}
+body main section.flame-bar .container-fluid .row .col-12 a .nav-link.click {
+  text-align: center;
+}
 body main section.flame-bar .container-fluid .row .col-12 a img {
-  width: 1920px;
+  width: 1850px;
+  min-width: 1850px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   height: 150px;
+  position: relative;
 }
 body main section.menu-photos {
   margin-top: 100px;
@@ -293,7 +306,7 @@ body main section.location .container-fluid .row .col-5 .box img {
 body main section.location .container-fluid .row .col-5 .box p {
   color: rgba(255, 255, 255, 0.6);
   margin-top: 50px;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 150px;
   margin-right: 150px;
 }
