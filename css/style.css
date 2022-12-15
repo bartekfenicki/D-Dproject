@@ -352,8 +352,8 @@ section.form .container-fluid .col-6.box-form form {
   padding: 20px;
 }
 section.form .container-fluid .col-6.box-video video {
-  margin-top: 60px;
-  margin-left: 110px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 @media screen and (min-width: 992px) {
