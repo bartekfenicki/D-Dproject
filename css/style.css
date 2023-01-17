@@ -446,9 +446,9 @@ section.form .container-fluid .row {
 section.form .container-fluid #form-box form {
   padding: 20px;
 }
-section.form .container-fluid #videobox video {
-  margin-top: 20px;
-  margin-left: 10px;
+section.form .container-fluid #boxvideo video {
+  margin-top: 40px;
+  margin-left: 90px;
 }
 
 @media (max-width: 800px) {
